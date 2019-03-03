@@ -292,7 +292,7 @@ app.get('/admin2', function (req, res) {
 // default home page
 // #############
 app.get('/', function (req, res) {
-    console.log("Request Parameters: ", JSON.stringify(req));
+    console.log("Request Parameters: ", JSON.stringify(req.query));
     res.render('index', req.session);
 });
 
